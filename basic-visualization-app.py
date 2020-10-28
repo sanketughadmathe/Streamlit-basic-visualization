@@ -6,8 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import numpy as np
 import matplotlib.pyplot as plt
-import scikitplot as skplt
-import plotly.express as px
 import seaborn as sns
 sns.set(style= "ticks")
 plt.style.use("fivethirtyeight")

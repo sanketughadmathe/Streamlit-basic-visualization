@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit basic-visualization-app.py
+web: sh setup.sh && streamlit run basic-visualization-app.py

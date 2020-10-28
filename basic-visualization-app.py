@@ -98,17 +98,13 @@ def print_results(y_test, y_pred, model='Results:'):
         st.write(f"Model: {model}")
         st.write(f"Accuracy is {round(accuracy_score(y_test, y_pred), 2)}")
         st.write(f"\nclassification Report:\n {classification_report(y_test, y_pred)}\n")
-        # skplt.metrics.plot_confusion_matrix(y_test, y_pred, title=f"Confusion Matrix for {classifier_name} Classifier")
-        # st.pyplot()
     else:
-        st.write(f"model")
+        st.write(f"Model: {model}")
         st.write(f"Accuracy is {round(accuracy_score(y_test, y_pred), 2)}")
         st.write(f"\nPrecision-score is {round(precision_score(y_test, y_pred), 2)}")
         st.write(f"\nRecall-score is {round(recall_score(y_test, y_pred), 2)}")
         st.write(f"\nF1-score is {round(f1_score(y_test, y_pred), 2)}")
         st.write(f"\nclassification Report:\n {classification_report(y_test, y_pred)}\n")
-        # skplt.metrics.plot_confusion_matrix(y_test, y_pred, title=f"Confusion Matrix for {classifier_name} Classifier")
-        # st.pyplot()
 
 print_results(y_test, y_pred, model=f'{classifier_name}')
 

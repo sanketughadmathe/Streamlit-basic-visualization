@@ -93,7 +93,6 @@ y_pred = clf.predict(X_test)
 
 def print_results(y_test, y_pred, model='Results:'):
     from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
-    import scikitplot as skplt
     if len(np.unique(y)) > 2:
         st.write(f"Model: {model}")
         st.write(f"Accuracy is {round(accuracy_score(y_test, y_pred), 2)}")
